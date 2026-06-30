@@ -1,4 +1,6 @@
+extern void config(void);
+
 int main(void) {
-    // nunca chega aqui; o controle está no tuner.S
-    while(1);
+    config();   // never returns, loops internally
+    while(1);       // unreachable, just for safety
 }

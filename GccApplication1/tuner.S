@@ -44,10 +44,6 @@ buffer_ready:
 /* ================================================================== */
 .section .vectors,"ax",@progbits
 
-.global __vector_0
-__vector_0:
-    rjmp config             /* RESET → entrada principal */
-
 .global __vector_1
 __vector_1:
     rjmp ISR_ext_int0       /* INT0  → botão "Modo"      */
